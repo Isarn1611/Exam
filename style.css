@@ -1,5 +1,5 @@
 html {
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,128 +11,127 @@ body {
 }
 
 header {
-  position:sticky;top:0;z-index:10;
-  display:flex;align-items:center;
-  justify-content:space-between;
-  padding:.6rem .9rem;
-  background:#151a2b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .6rem .9rem;
+  background: #151a2b;
 }
 
 .brand {
-  display:inline-flex;
-  align-items:center;
-  text-decoration:none;
-  color:white;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 .logo {
-  width:150px;
-  height:32px;
-  color:#69a8ff;
+  width: 150px;
+  height: 32px;
+  color: #69a8ff;
 }
 
 .hamburger {
-  display:none;
-  flex-direction:column;
-  gap:6px;
-  width:40px;
-  height:32px;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  border-radius:6px;
-  background:#101528;
-  border:1px solid #243055
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  width: 40px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #101528;
+  border: 1px solid #243055;
 }
 
 .hamburger span {
-  width:22px;
-  height:2px;
-  background:white;
-  border-radius:2px
+  width: 22px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
 }
 
 .nav {
-  display:flex;
-  gap:.5rem
+  display: flex;
+  gap: .5rem;
 }
 .nav a {
-  text-decoration:none;
-  color:#c6ccee;
-  padding:.5rem .7rem;
-  border-radius:.4rem
+  text-decoration: none;
+  color: #c6ccee;
+  padding: .5rem .7rem;
+  border-radius: .4rem;
 }
 .nav a:hover {
-  background:#1a2342
+  background:#1a2342;
 }
 .nav-mobile {
-  display:none;
-  position:absolute;
-  right:.9rem;
-  top:56px;
-  min-width:200px;
-  background:#11182c;
-  border:1px solid #243055;
-  border-radius:.5rem
+  display: none;
+  position: absolute;
+  right: .9rem;
+  top: 56px;
+  min-width: 200px;
+  background: #11182c;
+  border: 1px solid #243055;
+  border-radius: .5rem;
 }
 .nav-mobile a {
-  display:block;
-  padding:.6rem .9rem;
-  color:#c6ccee;
-  text-decoration:none
+  display: block;
+  padding: .6rem .9rem;
+  color: #c6ccee;
+  text-decoration: none;
 }
 .nav-mobile a:hover {
-  background:#1a2342
+  background: #1a2342;
 }
 
-/* เมื่อจอเล็กลง (<=960px) */
+/* (<=960px) */
 @media (max-width:960px) {
   .nav {
-    display:none
-  }          /* ซ่อนเมนูหลัก */
+    display: none;
+  }          
   .hamburger {
-    display:flex
-  }    /* โชว์ปุ่ม */
+    display: flex;
+  }    
   #nav-toggle:checked ~ 
   .nav-mobile {
-    display:block
-  } /* กดแล้วโชว์เมนูมือถือ */
+    display: block;
+  } 
 }
 
 /* Hero */
 .hero {
-  min-height:50vh;
-  display:grid;
-  place-items:center;
-  text-align:center;
-  padding:3rem 1rem;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
   background-color: #181e35;
 }
-.hero h1 {
-  margin:.2rem 0;
-  font-size:clamp(1.6rem,3.5vw,2.4rem);
-}
+
 .hero p {
-  margin:.5rem 0 1rem;
   color:#c6ccee;
 }
 
 .btn {
-  display:inline-block;
-  padding:.6rem 1rem;
-  border-radius:.5rem;
+  display: inline-block;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
   background: #69a8ff;
-  color:#06101a;
-  font-weight:700;
-  text-decoration:none
+  color: #06101a;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Cards */
 .cards {
-  width:min(1300px,92vw);
-  margin:3rem auto;
+  width: min(1300px,92vw);
+  margin: 3rem auto;
 }
 .cards h2 {
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
 }
 .grid {
   display: grid;
@@ -140,57 +139,50 @@ header {
   grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
 }
 .card {
-  background:#0f1526;
-  border:1px solid #22305a;
+  background: #0f1526;
+  border: 1px solid #22305a;
   border-radius: 14px;
   overflow: hidden;
 }
 .card img {
-  width:100%;
-  height:160px;
-  object-fit:cover;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 .card h3 {
-  margin:.6rem .8rem .2rem;
+  margin: .6rem .8rem .2rem;
 }
 .card p {
-  margin:0 .8rem 1rem;
+  margin: 0 .8rem 1rem;
   color:#c6ccee;
-  font-size:.95rem;
+  font-size: .95rem;
 }
 
 /* Contact */
 .contact {
   width: min(720px,92vw);
   margin: 10rem auto;
-  background:#0f1526;
+  background: #0f1526;
   border: 1px solid #22305a;
   border-radius: 14px;
   padding: 1rem;
 }
 .form {
-  display:grid;gap:.8rem;
+  display: grid;
+  gap: .8rem;
 }
 label {
-  display:grid;gap:.3rem;
-  font-weight:600;
+  display: grid;
+  gap: .3rem;
 }
 input,textarea {
-  background:#0c1326;
-  color:white;
-  border:1px solid #21305a;
-  border-radius:.4rem;
-  padding:.6rem .7rem;
+  background: #0c1326;
+  color: white;
+  border: 1px solid #21305a;
+  border-radius: .4rem;
+  padding: .6rem .7rem;
+  resize: none;
 }
-input:focus,textarea:focus {
-  border-color:#69a8ff;
-  box-shadow:0 0 0 3px #69a8ff33;
-}
-
-textarea {
-  resize: none;   /* ปิดปุ่มยืดขยาย */
-}
-
 
 /* Footer */
 .footer {
@@ -202,7 +194,8 @@ textarea {
 }
 
 /* To top */
-.to-top { position:fixed;
+.to-top { 
+  position: fixed;
   right: 1rem;
   bottom: 1rem;
   width: 44px;
@@ -212,7 +205,6 @@ textarea {
   border-radius: 50%;
   background: #69a8ff;
   color: #06101a;
-  font-weight: 800;
+  font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 4px 10px #0007;
 }
